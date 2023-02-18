@@ -1,15 +1,14 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import { PATHS } from "../navigation/paths";
+import NavBar from "../components/NavBar";
 
 const Index = () => {
 
-  const navigation = useNavigate()
-
   return (
-    <div onClick={() => { navigation(PATHS.ABOUT) }}>
-      INDEX
-    </div>
+    <>
+      <div style={{ height: '200vh' }}>
+        <NavBar />
+      </div>
+    </>
   )
 }
 

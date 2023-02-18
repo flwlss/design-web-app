@@ -47,6 +47,14 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(png|jpe?g|gif|jp2|webp|css)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+        },
+        exclude: /node_modules/,
+      },
     ]
   },
   resolve: {
