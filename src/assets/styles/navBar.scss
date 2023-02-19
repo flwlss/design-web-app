@@ -53,7 +53,7 @@
     }
 
     &__phone {
-      cursor: none;
+      cursor: default;
       font-size: 21px;
 
       @media (max-width:769px) {
