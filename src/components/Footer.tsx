@@ -21,13 +21,13 @@ const Footer = () => {
           </div>
           <div className='footer__socials'>
             <a href="https://wa.me/+79234792799" target="blank">
-              <img className="footer__socials__whatsapp" src={Whatsapp} alt="" />
+              <img className="footer__socials__svg" src={Whatsapp} alt="" />
             </a>
             {/* <a href="https://www.instagram.com/architecturedesign__studio/" target="blank">
               <img className="footer__socials__intagram" src={Telegram} alt="" />
             </a> */}
             <a href="https://t.me/fooyzi" target="blank">
-              <img className="footer__socials__telegram" src={Telegram} alt="" />
+              <img style={{ marginLeft: '15px' }} className="footer__socials__svg" src={Telegram} alt="" />
             </a>
           </div>
         </div>

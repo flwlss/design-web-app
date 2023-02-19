@@ -59,26 +59,13 @@
       margin-bottom: 10px;
     }
 
-    &__whatsapp {
+    &__svg {
       width: 40px;
 
       @media (max-width: 1366px) {
         width: 35px;
       }
 
-      @media (max-width: 1024px) {
-        width: 30px;
-      }
-    }
-
-    &__telegram {
-      width: 40px;
-      margin-left: 15px;
-  
-      @media (max-width: 1366px) {
-        width: 35px;
-      }
-  
       @media (max-width: 1024px) {
         width: 30px;
       }
