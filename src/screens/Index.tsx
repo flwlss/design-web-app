@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "../components/NavBar";
 import Header from "../components/Header";
 import About from "../components/About";
+import Footer from "../components/Footer";
 
 const Index = () => {
 
@@ -11,6 +12,7 @@ const Index = () => {
         <NavBar />
         <Header />
         <About />
+        <Footer />
       </div>
     </>
   )

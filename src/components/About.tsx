@@ -1,5 +1,5 @@
 import React from 'react'
-import Background from '../assets/images/aboutBackground.png'
+import Background from '../assets/images/backgrounds/aboutBackground.png'
 import Container from './Container'
 
 const About = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import Background from '../assets/images/headerBackground.png'
+import Background from '../assets/images/backgrounds/headerBackground.png'
 import Container from "./Container";
 import HeaderButton from "./HeaderButton";
 
