@@ -34,7 +34,9 @@ select {
   font: inherit;
 }
 
-a {
+a,
+li {
+  list-style: none;
   text-decoration: none;
 }
 
@@ -46,4 +48,8 @@ body {
 .container {
   padding: 0 15%;
   height: 100%;
+
+  @media (max-width:769px) {
+    padding: 0 5%;
+  }
 }
