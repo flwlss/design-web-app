@@ -1,12 +1,16 @@
 import React from "react";
 import NavBar from "../components/NavBar";
+import Header from "../components/Header";
+import About from "../components/About";
 
 const Index = () => {
 
   return (
     <>
-      <div style={{ height: '200vh' }}>
+      <div>
         <NavBar />
+        <Header />
+        <About />
       </div>
     </>
   )
