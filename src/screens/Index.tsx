@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import About from "../components/About";
 import Footer from "../components/Footer";
 import Progress from "../components/Progress";
+import Contacts from "../components/Contacts";
 
 const Index = () => {
 
@@ -13,6 +14,7 @@ const Index = () => {
       <Header />
       <About />
       <Progress />
+      <Contacts />
       <Footer />
     </>
   )
