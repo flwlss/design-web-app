@@ -1,11 +1,11 @@
 import React from "react";
 import Background from '../assets/images/backgrounds/headerBackground.png'
-import Container from "./Container";
-import HeaderButton from "./HeaderButton";
+import Container from "../components/Container";
+import HeaderButton from "../components/HeaderButton";
 
 const Header = () => {
   return (
-    <div
+    <header
       style={{ backgroundImage: `url(${Background})` }}
       className="header">
       <Container>
@@ -15,7 +15,7 @@ const Header = () => {
           <HeaderButton />
         </div>
       </Container>
-    </div>
+    </header>
   )
 }
 

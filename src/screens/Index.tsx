@@ -1,10 +1,10 @@
 import React from "react";
 import NavBar from "../components/NavBar";
-import Header from "../components/Header";
-import About from "../components/About";
-import Footer from "../components/Footer";
-import Progress from "../components/Progress";
-import Contacts from "../components/Contacts";
+import Header from "../sections/Header";
+import About from "../sections/About";
+import Footer from "../sections/Footer";
+import Progress from "../sections/Progress";
+import Contacts from "../sections/Contacts";
 
 const Index = () => {
 

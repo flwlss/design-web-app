@@ -1,10 +1,10 @@
 import React from 'react'
 import { progress } from '../common/utils'
-import Container from './Container'
+import Container from '../components/Container'
 
 const Progress = () => {
   return (
-    <div className='progress'>
+    <section className='progress'>
       <Container>
         <div className='progress__wrapper'>
           {progress.map((item, index) => {
@@ -17,7 +17,7 @@ const Progress = () => {
           })}
         </div>
       </Container>
-    </div>
+    </section>
   )
 }
 

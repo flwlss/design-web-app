@@ -1,17 +1,17 @@
 import React from 'react'
 import Background from '../assets/images/backgrounds/aboutBackground.png'
-import Container from './Container'
+import Container from '../components/Container'
 
 const About = () => {
   return (
-    <div
+    <section
       style={{ backgroundImage: `url(${Background})` }}
       className="about">
       <Container>
         <div>
         </div>
       </Container>
-    </div>
+    </section>
   )
 }
 

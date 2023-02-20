@@ -1,14 +1,14 @@
 import { format } from 'date-fns'
 import React from 'react'
 import Background from '../assets/images/backgrounds/footerBackground.png'
-import Container from './Container'
+import Container from '../components/Container'
 import Logo from '../assets/images/logo.png'
 import Whatsapp from '../assets/images/icons/whatsapp.svg'
 import Telegram from '../assets/images/icons/telegram.svg'
 
 const Footer = () => {
   return (
-    <div
+    <footer
       style={{ backgroundImage: `url(${Background})` }}
       className="footer">
       <Container>
@@ -32,7 +32,7 @@ const Footer = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </footer>
   )
 }
 

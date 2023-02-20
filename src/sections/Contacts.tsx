@@ -1,12 +1,12 @@
 import React from 'react'
-import Container from './Container'
+import Container from '../components/Container'
 import Background from '../assets/images/backgrounds/contactsBackground.png'
 import { andreyPhoneNumber, juliaPhoneNumber, nikitaPhoneNumber } from '../common/utils'
-import ContactsButton from './ContactsButton'
+import ContactsButton from '../components/ContactsButton'
 
 const Contacts = () => {
   return (
-    <div style={{ backgroundImage: `url(${Background})` }} className='contacts'>
+    <section style={{ backgroundImage: `url(${Background})` }} className='contacts'>
       <Container>
         <div>
           <p className='contacts__title'>контакты</p>
@@ -41,7 +41,7 @@ const Contacts = () => {
           <ContactsButton />
         </div>
       </Container>
-    </div>
+    </section>
   )
 }
 
