@@ -5,6 +5,7 @@ import About from "../sections/About";
 import Footer from "../sections/Footer";
 import Progress from "../sections/Progress";
 import Contacts from "../sections/Contacts";
+import Services from "../sections/Services";
 
 const Index = () => {
 
@@ -14,6 +15,7 @@ const Index = () => {
       <Header />
       <About />
       <Progress />
+      <Services />
       <Contacts />
       <Footer />
     </>
