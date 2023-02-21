@@ -3,4 +3,79 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 25px 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1024px) {
+      display: inline-block;
+    }
+  }
+
+  &__title {
+    font-size: 38px;
+    color: #fff;
+    text-transform: uppercase;
+
+    @media (max-width: 1366px) {
+      font-size: 34px;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 30px;
+      text-align: center;
+    }
+  }
+
+  &__description {
+    width: 50%;
+    padding-right: 30px;
+    border-right: 2px solid #fff;
+
+    @media (max-width: 1024px) {
+      width: 100%;
+      border: none;
+      padding-right: 0;
+    }
+
+    &__subtitle {
+      font-size: 33px;
+      color: #ffffff;
+      font-style: italic;
+      margin: 20px 0;
+
+      @media (max-width: 1366px) {
+        font-size: 30px;
+        margin: 15px 0;
+      }
+
+      @media (max-width: 1024px) {
+        font-size: 28px;
+        margin: 10px 0;
+        text-align: center;
+      }
+    }
+
+    &__text {
+      font-size: 23px;
+      color: #ffffff;
+      margin: 0;
+      font-weight: 100;
+      text-align: justify;
+
+      @media (max-width: 1366px) {
+        font-size: 20px;
+      }
+
+      @media (max-width: 1024px) {
+        font-size: 18px;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 17px;
+      }
+    }
+  }
 }
