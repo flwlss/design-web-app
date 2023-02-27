@@ -92,11 +92,13 @@
 
     @media (max-width:1024px) {
       position: relative;
+      padding: 15px 15% 15px 0;
+      background-color: transparent;
     }
 
     @media (max-width:768px) {
       width: 100%;
-      padding: 20px 5%  ;
+      padding: 20px 5%;
       margin: 0;
     }
 
@@ -161,11 +163,9 @@
 
       @media (max-width:1024px) {
         font-size: 18px;
-        // width: 90%;
       }
 
       @media (max-width:768px) {
-        // width: 100%;
         font-size: 17px;
       }
     }
