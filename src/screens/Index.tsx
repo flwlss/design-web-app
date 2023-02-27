@@ -6,6 +6,7 @@ import Footer from "../sections/Footer";
 import Progress from "../sections/Progress";
 import Contacts from "../sections/Contacts";
 import Services from "../sections/Services";
+import Portfolio from "../sections/Portfolio";
 
 const Index = () => {
 
@@ -15,6 +16,7 @@ const Index = () => {
       <Header />
       <About />
       <Progress />
+      <Portfolio />
       <Services />
       <Contacts />
       <Footer />
