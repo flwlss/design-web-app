@@ -181,3 +181,23 @@
   color: #5AB9EA;
   cursor: pointer;
 }
+
+.portfolio-screen {
+  background-color: grey;
+  min-height: 100vh;
+
+  &__squares {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    padding: 40px 0;
+  }
+
+  &__square {
+    border: 2px solid #fff;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+  }
+}

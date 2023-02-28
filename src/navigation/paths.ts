@@ -1,4 +1,4 @@
 export const PATHS = {
   ROOT: "/",
-  ABOUT: '/about'
+  DESIGN_PORTFOLIO: '/design-portfolio'
 }

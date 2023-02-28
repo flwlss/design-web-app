@@ -7,7 +7,7 @@ const PortfolioButton = () => {
   const navigation = useNavigate()
 
   const action = () => {
-    navigation(PATHS.ABOUT)
+    navigation(PATHS.DESIGN_PORTFOLIO)
   }
 
   return (
