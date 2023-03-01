@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { portfolioSquares } from "../common/utils";
 import Container from "../components/Container";
+import { PATHS } from "../navigation/paths";
 
 const Portfolio = () => {
 
@@ -18,10 +19,15 @@ const Portfolio = () => {
             if (item.id === id) {
               return (
                 <div className="portfolio-screen__squares" key={index} >
-                  {item.links.map((item, index) => {
+                  {item.squares.map((item, index) => {
                     return (
-                      <div className="portfolio-screen__square" key={index}>
-                        <img className="portfolio-screen__square__img" src={item} alt=""  />
+                      <div
+                        onClick={() => { item.name && navigation(PATHS.PORTFOLIO + id + '/' + item.name) }}
+                        className="portfolio-screen__square"
+                        key={index}>
+                        <img
+                          className="portfolio-screen__square__img"
+                          src={item.mainImage} alt="" />
                       </div>
                     )
                   })}

@@ -3,9 +3,27 @@ import AndreyPhoto from '../assets/images/photos/andrey.png'
 import NikitaPhoto from '../assets/images/photos/nikita.png'
 import RomaPhoto from '../assets/images/photos/roma.png'
 
-import designSquare1 from '../assets/images/portfolio/design/photo1.png'
-import designSquare2 from '../assets/images/portfolio/design/photo2.png'
-import designSquare3 from '../assets/images/portfolio/design/photo3.png'
+import kebabHouse1 from '../assets/images/portfolio/design/kebabHouse/kebabHouse1.png'
+import kebabHouse2 from '../assets/images/portfolio/design/kebabHouse/kebabHouse2.png'
+import kebabHouse3 from '../assets/images/portfolio/design/kebabHouse/kebabHouse3.png'
+import kebabHouse4 from '../assets/images/portfolio/design/kebabHouse/kebabHouse4.png'
+import kebabHouse5 from '../assets/images/portfolio/design/kebabHouse/kebabHouse5.png'
+
+import sanatorium1 from '../assets/images/portfolio/design/sanatorium/sanatorium1.jpg'
+import sanatorium2 from '../assets/images/portfolio/design/sanatorium/sanatorium2.jpg'
+import sanatorium3 from '../assets/images/portfolio/design/sanatorium/sanatorium3.jpg'
+import sanatorium4 from '../assets/images/portfolio/design/sanatorium/sanatorium4.jpg'
+import sanatorium5 from '../assets/images/portfolio/design/sanatorium/sanatorium5.jpg'
+
+import greenQuartalFlat1 from '../assets/images/portfolio/design/greenQuartalFlat/greenQuartalFlat1.jpg'
+import greenQuartalFlat2 from '../assets/images/portfolio/design/greenQuartalFlat/greenQuartalFlat2.jpg'
+import greenQuartalFlat3 from '../assets/images/portfolio/design/greenQuartalFlat/greenQuartalFlat3.jpg'
+import greenQuartalFlat4 from '../assets/images/portfolio/design/greenQuartalFlat/greenQuartalFlat4.jpg'
+import greenQuartalFlat5 from '../assets/images/portfolio/design/greenQuartalFlat/greenQuartalFlat5.jpg'
+
+import designEmpty1 from '../assets/images/portfolio/design/designEmpty1.png'
+import designEmpty2 from '../assets/images/portfolio/design/designEmpty2.png'
+import designEmpty3 from '../assets/images/portfolio/design/designEmpty3.png'
 
 export const juliaPhoneNumber = '+7 (923) 465-99-77'
 export const andreyPhoneNumber = '+7 (951) 604-80-60'
@@ -197,10 +215,31 @@ export const employees = [
 export const portfolioSquares = [
   {
     id: 'design',
-    links: [designSquare1, designSquare2, designSquare3]
+    squares: [
+      {
+        name: 'kebab-house',
+        mainImage: kebabHouse1,
+        images: [kebabHouse1, kebabHouse2, kebabHouse3, kebabHouse4, kebabHouse5]
+      },
+      {
+        name: 'sanatorium-prokopyevskiy',
+        mainImage: sanatorium2,
+        images: [sanatorium1, sanatorium2, sanatorium3, sanatorium4, sanatorium5]
+      },
+      {
+        name: 'green-quartal-flat',
+        mainImage: greenQuartalFlat1,
+        images: [greenQuartalFlat1, greenQuartalFlat2, greenQuartalFlat3, greenQuartalFlat4, greenQuartalFlat5]
+      },
+      {
+        mainImage: designEmpty1,
+      },
+      {
+        mainImage: designEmpty2,
+      },
+      {
+        mainImage: designEmpty3,
+      },
+    ],
   },
-  {
-    id: 'planning',
-    links: ['2', '2', '2', '2', '2',]
-  }
 ]
