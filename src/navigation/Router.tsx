@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import DesignPortfolio from '../screens/DesignPortfolio';
 import Index from '../screens/Index';
+import Portfolio from '../screens/Portfolio';
 import { PATHS } from './paths';
 
 const Router: React.FC = () => {
@@ -9,7 +9,7 @@ const Router: React.FC = () => {
   return (
     <Routes>
       <Route path={PATHS.ROOT} element={<Index />} />
-      <Route path={PATHS.DESIGN_PORTFOLIO} element={<DesignPortfolio />} />
+      <Route path={`${PATHS.PORTFOLIO}:id`} element={<Portfolio />} />
     </Routes>
   )
 }

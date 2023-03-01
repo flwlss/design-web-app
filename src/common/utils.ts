@@ -3,6 +3,10 @@ import AndreyPhoto from '../assets/images/photos/andrey.png'
 import NikitaPhoto from '../assets/images/photos/nikita.png'
 import RomaPhoto from '../assets/images/photos/roma.png'
 
+import designSquare1 from '../assets/images/portfolio/design/photo1.png'
+import designSquare2 from '../assets/images/portfolio/design/photo2.png'
+import designSquare3 from '../assets/images/portfolio/design/photo3.png'
+
 export const juliaPhoneNumber = '+7 (923) 465-99-77'
 export const andreyPhoneNumber = '+7 (951) 604-80-60'
 export const nikitaPhoneNumber = '+7 (913) 295-92-49'
@@ -188,4 +192,15 @@ export const employees = [
     post: 'ИНЖЕНЕР-КОНСТРУКТОР',
     description: 'Окончил Новосибирский Государственный\nАрхитектурно-Строительный Университет\n(СИБСТРИН) по специальности "Архитектура"\n\nНаправления деятельности:\n- Архитектурное проектирование\n- Металлоконструкции\nЗанимается деятельностью в областях\nархитектуры и металлоконструкций\nболее 4-х лет'
   },
+]
+
+export const portfolioSquares = [
+  {
+    id: 'design',
+    links: [designSquare1, designSquare2, designSquare3]
+  },
+  {
+    id: 'planning',
+    links: ['2', '2', '2', '2', '2',]
+  }
 ]

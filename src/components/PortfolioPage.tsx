@@ -6,6 +6,7 @@ interface IPortfolioPageProps {
   text: string
   leftImageSrc: string
   rightImageSrc: string
+  route: string
 }
 
 const PortfolioPage = (props: IPortfolioPageProps) => {
@@ -19,7 +20,7 @@ const PortfolioPage = (props: IPortfolioPageProps) => {
         </div>
         <p className="portfolio-page__opacity__title">{props.title}</p>
         <p className="portfolio-page__opacity__text">{props.text}</p>
-        <PortfolioButton />
+        <PortfolioButton route={props.route} />
       </div>
       <div className="portfolio-page__left">
         <div>

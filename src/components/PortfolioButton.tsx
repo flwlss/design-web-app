@@ -2,12 +2,16 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { PATHS } from "../navigation/paths";
 
-const PortfolioButton = () => {
+interface IPortfolioButtonProps {
+  route: string
+}
+
+const PortfolioButton = (props: IPortfolioButtonProps) => {
 
   const navigation = useNavigate()
 
   const action = () => {
-    navigation(PATHS.DESIGN_PORTFOLIO)
+    navigation(PATHS.PORTFOLIO + props.route)
   }
 
   return (
