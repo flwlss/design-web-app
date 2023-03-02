@@ -7,6 +7,7 @@
 @import './contacts.scss';
 @import './services.scss';
 @import './portfolio.scss';
+@import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 /* Указываем box sizing */
 *,
@@ -50,6 +51,7 @@ li {
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  min-width: 320px;
 }
 
 .container {
@@ -68,5 +70,18 @@ body {
 
   to {
     margin-top: 0%;
+  }
+}
+
+.carousel.carousel-slider .control-arrow {
+  bottom: auto;
+  top: 150px;
+
+  @media (max-width: 1024px) {
+    top: 30%;
+  }
+
+  @media (max-width: 480px) {
+    top: 25%;
   }
 }

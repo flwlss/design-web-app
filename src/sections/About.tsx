@@ -1,5 +1,6 @@
 import React from 'react'
 import Background from '../assets/images/backgrounds/aboutBackground.png'
+import AboutCarousel from '../components/AboutCarousel'
 import Container from '../components/Container'
 
 const About = () => {
@@ -31,8 +32,8 @@ const About = () => {
               мы выстраиваем крепкие и долгосрочные партнерские
               отношения с каждым нашим клиентом.</p>
           </div>
-          <div style={{ color: '#fff' }}>
-            slider
+          <div className='about__slider'>
+            <AboutCarousel />
           </div>
         </div>
       </Container>
