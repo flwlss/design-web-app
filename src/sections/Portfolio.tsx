@@ -16,14 +16,14 @@ const Portfolio = () => {
 
   const [activePage, setActivePage] = useState('design')
 
-  window.onscroll = function () { showPortfolio() };
-  function showPortfolio() {
-    if (document.body.offsetWidth < 1024 || document.documentElement.offsetWidth < 1024) {
-      setActivePage('all')
-    } else {
-      setActivePage('design')
-    }
-  }
+  // window.onscroll = function () { showPortfolio() };
+  // function showPortfolio() {
+  //   if (document.body.offsetWidth < 1024 || document.documentElement.offsetWidth < 1024) {
+  //     setActivePage('all')
+  //   } else {
+  //     setActivePage('design')
+  //   }
+  // }
 
   return (
     <section

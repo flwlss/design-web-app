@@ -1,16 +1,20 @@
 import React from "react";
 
-const ContactsButton = () => {
+interface IContactsButtonProps {
+  title: string
+  action: () => void
+  width?: string
+}
 
-  const buttonAction = () => {
-    alert('click')
-  }
+const ContactsButton = (props: IContactsButtonProps) => {
 
   return (
     <button
-      onClick={buttonAction}
+    // type="button"
+      style={{ width: props.width }}
+      onClick={props.action}
       className="contacts__button">
-      оставить заявку
+      {props.title}
     </button>
   )
 }

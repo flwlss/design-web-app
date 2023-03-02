@@ -1,17 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
+import FeedbackCard from "./FeedbackCard";
 
 const HeaderButton = () => {
 
-  const ButtonAction = () => {
-    alert(true)
-  }
+  const [state, setState] = useState(false)
 
+  const ButtonAction = () => {
+    setState(true)
+  }
+  
   return (
-    <button
-      onClick={ButtonAction}
-      className="header__button">
-      Заказать проект
-    </button>
+    <>
+      {state && <FeedbackCard />}
+      <button
+        onClick={ButtonAction}
+        className="header__button">
+        Заказать проект
+      </button>
+    </>
   )
 }
 

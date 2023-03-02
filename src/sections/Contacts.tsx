@@ -38,7 +38,7 @@ const Contacts = () => {
               </div>
             </div>
           </div>
-          <ContactsButton />
+          <ContactsButton action={() =>{alert(true)}} title={'оставить заявку'}/>
         </div>
       </Container>
     </section>
