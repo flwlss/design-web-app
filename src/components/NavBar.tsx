@@ -1,12 +1,21 @@
 import React from "react";
-import { juliaPhoneNumber } from "../common/utils";
+import { juliaPhoneNumber } from "../common/constants";
 import Container from "./Container";
 import Logo from '../assets/images/logo.png'
 
 const NavBar = () => {
 
+  window.onscroll = function () { scrollFunction() };
+  function scrollFunction() {
+    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+      (document.getElementById("navBar") as any).style.cssText = `background-color: white; transition: 0.5s`
+    } else {
+      (document.getElementById("navBar") as any).style.cssText = `background-color: ; transition: 0.5s`
+    }
+  }
+
   return (
-    <nav className="navBar">
+    <nav id="navBar" className="navBar">
       <Container>
         <div className="navBar__wrapper">
           <div className="navBar__company">

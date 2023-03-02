@@ -1,5 +1,5 @@
 import React from 'react'
-import { progress } from '../common/utils'
+import { progress } from '../common/constants'
 import Container from '../components/Container'
 
 const Progress = () => {

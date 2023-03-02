@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from '../components/Container'
 import Background from '../assets/images/backgrounds/contactsBackground.png'
-import { andreyPhoneNumber, juliaPhoneNumber, nikitaPhoneNumber } from '../common/utils'
+import { andreyPhoneNumber, juliaPhoneNumber, nikitaPhoneNumber } from '../common/constants'
 import ContactsButton from '../components/ContactsButton'
 
 const Contacts = () => {

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { portfolioSquares } from "../common/utils";
+import { portfolioSquares } from "../common/constants";
 
 const PortfolioItem = () => {
 

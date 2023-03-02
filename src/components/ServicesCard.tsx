@@ -1,5 +1,5 @@
 import React from 'react'
-import { servicesCard } from '../common/utils'
+import { servicesCard } from '../common/constants'
 import Background from '../assets/images/backgrounds/contactsBackground.png'
 import Arrow from '../assets/images/icons/blueLeftArrow.svg'
 

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { portfolioSquares } from "../common/utils";
+import { portfolioSquares } from "../common/constants";
 import Container from "../components/Container";
 import { PATHS } from "../navigation/paths";
 

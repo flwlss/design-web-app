@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import BackgroundLeft from '../assets/images/backgrounds/contactsBackground.png'
 import BackgroundRight from '../assets/images/backgrounds/meetingBackground.png'
-import { meeting, services } from "../common/utils";
+import { meeting, services } from "../common/constants";
 import Arrow from '../assets/images/icons/blueRightArrow.svg'
 import ServicesCard from "../components/ServicesCard";
 
