@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Background from '../assets/images/backgrounds/portfolioBackground.png'
 import Container from "../components/Container";
 import PortfolioPage from "../components/PortfolioPage";
@@ -15,6 +15,15 @@ import FitodesignRight from '../assets/images/portfolio/fitodesignRight.png'
 const Portfolio = () => {
 
   const [activePage, setActivePage] = useState('design')
+
+  window.onscroll = function () { showPortfolio() };
+  function showPortfolio() {
+    if (document.body.offsetWidth < 1024 || document.documentElement.offsetWidth < 1024) {
+      setActivePage('all')
+    } else {
+      setActivePage('design')
+    }
+  }
 
   return (
     <section
@@ -41,7 +50,7 @@ const Portfolio = () => {
           </p>
         </div>
       </Container>
-      {activePage === 'design' &&
+      {(activePage === 'design' || activePage === 'all') &&
         <PortfolioPage
           route="design"
           title={'Дизайн интерьера'}
@@ -49,7 +58,7 @@ const Portfolio = () => {
           leftImageSrc={DesignLeft}
           rightImageSrc={DesignRight} />
       }
-      {activePage === 'planning' &&
+      {(activePage === 'planning' || activePage === 'all') &&
         <PortfolioPage
           route="planning"
           title={'Архитектурное проектирование'}
@@ -57,7 +66,7 @@ const Portfolio = () => {
           leftImageSrc={PlanningLeft}
           rightImageSrc={PlanningRight} />
       }
-      {activePage === 'fitodesign' &&
+      {(activePage === 'fitodesign' || activePage === 'all') &&
         <PortfolioPage
           route="fitodesign"
           title={'Фитодизайн'}
