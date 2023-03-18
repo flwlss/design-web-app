@@ -6,6 +6,7 @@ import HeaderButton from "../components/HeaderButton";
 const Header = () => {
   return (
     <header
+      id="header"
       style={{ backgroundImage: `url(${Background})` }}
       className="header">
       <Container>

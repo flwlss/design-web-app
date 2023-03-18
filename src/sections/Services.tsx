@@ -18,7 +18,9 @@ const Services = () => {
           closeCard={() => { setShowCard(false) }}
           cardId={cardId} />
       }
-      <section className="services-and-price">
+      <section
+        id="services"
+        className="services-and-price">
         <div style={{ backgroundImage: `url(${BackgroundLeft})` }} className="services">
           <p className="services__title">услуги и цены</p>
           <div className="services__services-wrapper">

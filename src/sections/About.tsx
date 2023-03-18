@@ -6,6 +6,7 @@ import Container from '../components/Container'
 const About = () => {
   return (
     <section
+      id='about'
       style={{ backgroundImage: `url(${Background})` }}
       className="about">
       <Container>

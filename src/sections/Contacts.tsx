@@ -6,7 +6,9 @@ import ContactsButton from '../components/ContactsButton'
 
 const Contacts = () => {
   return (
-    <section style={{ backgroundImage: `url(${Background})` }} className='contacts'>
+    <section
+      id='contacts'
+      style={{ backgroundImage: `url(${Background})` }} className='contacts'>
       <Container>
         <div>
           <p className='contacts__title'>контакты</p>
@@ -38,7 +40,7 @@ const Contacts = () => {
               </div>
             </div>
           </div>
-          <ContactsButton action={() =>{alert(true)}} title={'оставить заявку'}/>
+          <ContactsButton action={() => { alert(true) }} title={'оставить заявку'} />
         </div>
       </Container>
     </section>

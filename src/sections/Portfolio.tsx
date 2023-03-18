@@ -27,6 +27,7 @@ const Portfolio = () => {
 
   return (
     <section
+      id="portfolio"
       style={{ backgroundImage: `url(${Background})` }}
       className="portfolio">
       <Container>

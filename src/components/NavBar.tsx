@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { juliaPhoneNumber } from "../common/constants";
 import Container from "./Container";
 import Logo from '../assets/images/logo.png'
+import { scroller } from "react-scroll";
 
 const NavBar = () => {
 
@@ -14,19 +15,30 @@ const NavBar = () => {
     }
   }
 
+  const [sectionId, setSectionId] = useState('')
+
+  scroller.scrollTo(sectionId, {
+    offset: -79,
+    smooth: true,
+  })
+  
+  setTimeout(() => {
+    setSectionId('')
+  }, (500));
+
   return (
     <nav id="navBar" className="navBar">
       <Container>
         <div className="navBar__wrapper">
-          <div className="navBar__company">
+          <div onClick={() => { setSectionId('header') }} className="navBar__company">
             <img className="navBar__company__logo" src={Logo} alt="" />
             <p className="navBar__company__name">architecture<br />design</p>
           </div>
           <div className="navBar__items">
-            <p className="navBar__items__btn">о нас</p>
-            <p className="navBar__items__btn">портфолио</p>
-            <p className="navBar__items__btn">услуги и цены</p>
-            <p className="navBar__items__btn">контакты</p>
+            <p onClick={() => { setSectionId('about') }} className="navBar__items__btn">о нас</p>
+            <p onClick={() => { setSectionId('portfolio') }} className="navBar__items__btn">портфолио</p>
+            <p onClick={() => { setSectionId('services') }} className="navBar__items__btn">услуги и цены</p>
+            <p onClick={() => { setSectionId('contacts') }} className="navBar__items__btn">контакты</p>
             <p className="navBar__items__phone">{juliaPhoneNumber}</p>
           </div>
 
