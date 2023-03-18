@@ -6,25 +6,29 @@ import { scroller } from "react-scroll";
 
 const NavBar = () => {
 
+  const [sectionId, setSectionId] = useState('')
+
   window.onscroll = function () { scrollFunction() };
   function scrollFunction() {
     if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-      (document.getElementById("navBar") as any).style.cssText = `background-color: white; transition: 0.5s`
+      (document.getElementById("navBar") as HTMLElement).style.cssText = `background-color: white; transition: 0.5s`
     } else {
-      (document.getElementById("navBar") as any).style.cssText = `background-color: ; transition: 0.5s`
+      (document.getElementById("navBar") as HTMLElement).style.cssText = `background-color: ; transition: 0.5s`
     }
   }
 
-  const [sectionId, setSectionId] = useState('')
+  const toggleBurger = () => {
+    (document.getElementById('menu-toggle') as HTMLInputElement).checked = false;
+  }
 
-  scroller.scrollTo(sectionId, {
-    offset: -79,
-    smooth: true,
-  })
-  
-  setTimeout(() => {
+  useEffect(() => {
+    scroller.scrollTo(sectionId, {
+      offset: -79,
+      smooth: true,
+    })
+    toggleBurger()
     setSectionId('')
-  }, (500));
+  }, [sectionId])
 
   return (
     <nav id="navBar" className="navBar">
@@ -49,10 +53,10 @@ const NavBar = () => {
             </label>
             <ul className="menubox">
               <div>
-                <p className="burger-menu__item">о нас</p>
-                <p className="burger-menu__item">портфолио</p>
-                <p className="burger-menu__item">услуги и цены</p>
-                <p className="burger-menu__item">контакты</p>
+                <p onClick={() => { setSectionId('about') }} className="burger-menu__item">о нас</p>
+                <p onClick={() => { setSectionId('portfolio') }} className="burger-menu__item">портфолио</p>
+                <p onClick={() => { setSectionId('services') }} className="burger-menu__item">услуги и цены</p>
+                <p onClick={() => { setSectionId('contacts') }} className="burger-menu__item">контакты</p>
                 <p className="burger-menu__phone">{juliaPhoneNumber}</p>
               </div>
             </ul>
