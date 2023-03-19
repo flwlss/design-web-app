@@ -61,7 +61,7 @@ const FeedbackCard = (props: IFeedbackCardProps) => {
             placeholder='Иван'
             type="text"
             onChange={formik.handleChange}
-            value={formik.values.name}
+            value={formik.values.name.replace(/[^а-яёА-ЯЁ]/g, '')}
           />
           {formik.touched.name && formik.errors.name ? (
             <div className='feedbackCard__error'>{formik.errors.name}</div>
