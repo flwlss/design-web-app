@@ -36,7 +36,7 @@ const NavBar = () => {
         <div className="navBar__wrapper">
           <div onClick={() => { setSectionId('header') }} className="navBar__company">
             <img className="navBar__company__logo" src={Logo} alt="" />
-            <p className="navBar__company__name">architecture<br />design</p>
+            <p className="navBar__company__name">{`architecture\ndesign`}</p>
           </div>
           <div className="navBar__items">
             <p onClick={() => { setSectionId('about') }} className="navBar__items__btn">о нас</p>

@@ -18,7 +18,7 @@ const Header = () => {
         <Container>
           <div className="header__content">
             <p className="header__content__subtitle">Современная архитектура</p>
-            <p className="header__content__title">воплоти свою мечту<br />в жизнь</p>
+            <p className="header__content__title">{`воплоти свою мечту\nв жизнь`}</p>
             <HeaderButton action={() => { setShowCard(true) }} />
           </div>
         </Container>

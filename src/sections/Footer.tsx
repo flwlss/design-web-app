@@ -16,8 +16,7 @@ const Footer = () => {
           <div className='footer__rights'>
             <img className='footer__rights__logo' src={Logo} alt="" />
             <p className='footer__rights__text'>{`© ${format(new Date(), 'yyyy')} `}
-              ARCHITECTURE DESIGN STUDIO<br />
-              Все права защищены</p>
+              {`ARCHITECTURE DESIGN STUDIO\nВсе права защищены`}</p>
           </div>
           <div className='footer__socials'>
             <a href="https://wa.me/+79234792799" target="blank">
