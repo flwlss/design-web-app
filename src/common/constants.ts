@@ -64,6 +64,7 @@ import fitodesignEmpty3 from '../assets/images/portfolio/fitodesign/fitodesignEm
 import fitodesignEmpty4 from '../assets/images/portfolio/fitodesign/fitodesignEmpty4.png'
 import fitodesignEmpty5 from '../assets/images/portfolio/fitodesign/fitodesignEmpty5.png'
 import fitodesignEmpty6 from '../assets/images/portfolio/fitodesign/fitodesignEmpty6.png'
+import { format } from 'date-fns'
 
 // fitodesign
 // -------------------------------------------------------------------------------------------------------------------------
@@ -78,7 +79,7 @@ export const progress = [
     text: 'реализованных проектов'
   },
   {
-    title: '13+',
+    title: +format(new Date(), 'yy') - 9 + '+',
     text: 'лет опыта'
   }
 ]
