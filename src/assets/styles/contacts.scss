@@ -59,6 +59,7 @@
       color: #1F2833;
       text-align: center;
       text-transform: uppercase;
+      white-space: pre-wrap;
 
       @media (max-width: 1366px) {
         font-size: 28px;
@@ -78,6 +79,7 @@
       color: #1F2833;
       text-align: center;
       margin-left: 50px;
+      white-space: pre-wrap;
 
       @media (max-width: 1366px) {
         font-size: 17px;

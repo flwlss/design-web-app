@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { juliaPhoneNumber } from "../common/constants";
 import Container from "./Container";
 import Logo from '../assets/images/logo.png'
 import { scroller } from "react-scroll";
+import { employees } from "../common/constants";
 
 const NavBar = () => {
 
@@ -43,7 +43,7 @@ const NavBar = () => {
             <p onClick={() => { setSectionId('portfolio') }} className="navBar__items__btn">портфолио</p>
             <p onClick={() => { setSectionId('services') }} className="navBar__items__btn">услуги и цены</p>
             <p onClick={() => { setSectionId('contacts') }} className="navBar__items__btn">контакты</p>
-            <p className="navBar__items__phone">{juliaPhoneNumber}</p>
+            <p className="navBar__items__phone">{employees[0].phone}</p>
           </div>
 
           <div className="burger-menu">
@@ -57,7 +57,7 @@ const NavBar = () => {
                 <p onClick={() => { setSectionId('portfolio') }} className="burger-menu__item">портфолио</p>
                 <p onClick={() => { setSectionId('services') }} className="burger-menu__item">услуги и цены</p>
                 <p onClick={() => { setSectionId('contacts') }} className="burger-menu__item">контакты</p>
-                <p className="burger-menu__phone">{juliaPhoneNumber}</p>
+                <p className="burger-menu__phone">{employees[0].phone}</p>
               </div>
             </ul>
           </div>
