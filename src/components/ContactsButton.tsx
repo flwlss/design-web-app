@@ -2,7 +2,7 @@ import React from "react";
 
 interface IContactsButtonProps {
   title: string
-  action: () => void
+  action?: () => void
   width?: string
 }
 

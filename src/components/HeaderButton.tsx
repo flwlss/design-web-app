@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 
-const HeaderButton = () => {
+interface IHeaderButtonProps {
+  action: () => void
+}
+
+const HeaderButton = (props: IHeaderButtonProps) => {
 
   return (
     <>
       <button
-        onClick={() => {}}
+        onClick={props.action}
         className="header__button">
         Заказать проект
       </button>

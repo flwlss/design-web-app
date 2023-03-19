@@ -1,22 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import Background from '../assets/images/backgrounds/headerBackground.png'
 import Container from "../components/Container";
+import FeedbackCard from "../components/FeedbackCard";
 import HeaderButton from "../components/HeaderButton";
 
 const Header = () => {
+
+  const [showCard, setShowCard] = useState(false)
+
   return (
-    <header
-      id="header"
-      style={{ backgroundImage: `url(${Background})` }}
-      className="header">
-      <Container>
-        <div className="header__content">
-          <p className="header__content__subtitle">Современная архитектура</p>
-          <p className="header__content__title">воплоти свою мечту<br />в жизнь</p>
-          <HeaderButton />
-        </div>
-      </Container>
-    </header>
+    <>
+      {showCard && <FeedbackCard closeAction={() => { setShowCard(false) }} />}
+      <header
+        id="header"
+        style={{ backgroundImage: `url(${Background})` }}
+        className="header">
+        <Container>
+          <div className="header__content">
+            <p className="header__content__subtitle">Современная архитектура</p>
+            <p className="header__content__title">воплоти свою мечту<br />в жизнь</p>
+            <HeaderButton action={() => { setShowCard(true) }} />
+          </div>
+        </Container>
+      </header>
+    </>
   )
 }
 
