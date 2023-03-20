@@ -70,6 +70,9 @@ import fitodesignEmpty6 from '../assets/images/portfolio/fitodesign/fitodesignEm
 // fitodesign
 // -------------------------------------------------------------------------------------------------------------------------
 
+import Telegram from '../assets/images/icons/telegram.svg'
+import Whatsapp from '../assets/images/icons/whatsapp.svg'
+
 export const progress = [
   {
     title: '2+',
@@ -344,5 +347,16 @@ export const companyContacts = [
   {
     title: 'почта:',
     text: 'architecturedesign@mail.ru'
+  }
+]
+
+export const socials = [
+  {
+    href: 'https://wa.me/+79234792799',
+    svgSrc: Whatsapp
+  },
+  {
+    href: 'https://t.me/fooyzi',
+    svgSrc: Telegram
   }
 ]

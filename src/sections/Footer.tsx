@@ -3,8 +3,7 @@ import React from 'react'
 import Background from '../assets/images/backgrounds/footerBackground.png'
 import Container from '../components/Container'
 import Logo from '../assets/images/logo.png'
-import Whatsapp from '../assets/images/icons/whatsapp.svg'
-import Telegram from '../assets/images/icons/telegram.svg'
+import { socials } from '../common/constants'
 
 const Footer = () => {
   return (
@@ -19,15 +18,13 @@ const Footer = () => {
               {`ARCHITECTURE DESIGN STUDIO\nВсе права защищены`}</p>
           </div>
           <div className='footer__socials'>
-            <a href="https://wa.me/+79234792799" target="blank">
-              <img className="footer__socials__svg" src={Whatsapp} alt="" />
-            </a>
-            {/* <a href="https://www.instagram.com/architecturedesign__studio/" target="blank">
-              <img className="footer__socials__intagram" src={Telegram} alt="" />
-            </a> */}
-            <a href="https://t.me/fooyzi" target="blank">
-              <img style={{ marginLeft: '15px' }} className="footer__socials__svg" src={Telegram} alt="" />
-            </a>
+            {socials.map((item, index) => {
+              return (
+                <a className='footer__socials__svgWrapper' key={index} href={item.href} target="blank">
+                  <img className="footer__socials__svg" src={item.svgSrc} alt="" />
+                </a>
+              )
+            })}
           </div>
         </div>
       </Container>
