@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
-import { portfolioSquares } from "../common/constants";
+import { PHOTO_URL, portfolioSquares } from "../common/constants";
 
 const PortfolioItem = () => {
 
@@ -19,7 +19,7 @@ const PortfolioItem = () => {
                     {item.images?.map((item, index) => {
                       return (
                         <div className="portfolio-screen__images-wrapper" key={index}>
-                          <img className="portfolio-screen__images" src={item} alt="" />
+                          <img className="portfolio-screen__images" src={PHOTO_URL + item} alt="" />
                         </div>
                       )
                     })}
