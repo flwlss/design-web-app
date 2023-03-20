@@ -1,6 +1,74 @@
 import { format } from 'date-fns'
 
-export const PHOTO_URL = 'https://i.ibb.co/'
+import JuliaPhoto from '../assets/images/employees/julia.png'
+import AndreyPhoto from '../assets/images/employees/andrey.png'
+import NikitaPhoto from '../assets/images/employees/nikita.png'
+import RomaPhoto from '../assets/images/employees/roma.png'
+
+// -------------------------------------------------------------------------------------------------------------------------
+// design
+
+import kebabHouse1 from '../assets/images/portfolio/design/kebabHouse/kebabHouse1.png'
+import kebabHouse2 from '../assets/images/portfolio/design/kebabHouse/kebabHouse2.png'
+import kebabHouse3 from '../assets/images/portfolio/design/kebabHouse/kebabHouse3.png'
+import kebabHouse4 from '../assets/images/portfolio/design/kebabHouse/kebabHouse4.png'
+import kebabHouse5 from '../assets/images/portfolio/design/kebabHouse/kebabHouse5.png'
+
+import sanatorium1 from '../assets/images/portfolio/design/sanatorium/sanatorium1.jpg'
+import sanatorium2 from '../assets/images/portfolio/design/sanatorium/sanatorium2.jpg'
+import sanatorium3 from '../assets/images/portfolio/design/sanatorium/sanatorium3.jpg'
+import sanatorium4 from '../assets/images/portfolio/design/sanatorium/sanatorium4.jpg'
+import sanatorium5 from '../assets/images/portfolio/design/sanatorium/sanatorium5.jpg'
+
+import greenQuartalFlat1 from '../assets/images/portfolio/design/greenQuartalFlat/greenQuartalFlat1.jpg'
+import greenQuartalFlat2 from '../assets/images/portfolio/design/greenQuartalFlat/greenQuartalFlat2.jpg'
+import greenQuartalFlat3 from '../assets/images/portfolio/design/greenQuartalFlat/greenQuartalFlat3.jpg'
+import greenQuartalFlat4 from '../assets/images/portfolio/design/greenQuartalFlat/greenQuartalFlat4.jpg'
+import greenQuartalFlat5 from '../assets/images/portfolio/design/greenQuartalFlat/greenQuartalFlat5.jpg'
+
+import designEmpty1 from '../assets/images/portfolio/design/designEmpty1.png'
+import designEmpty2 from '../assets/images/portfolio/design/designEmpty2.png'
+import designEmpty3 from '../assets/images/portfolio/design/designEmpty3.png'
+
+// design
+// -------------------------------------------------------------------------------------------------------------------------
+
+// -------------------------------------------------------------------------------------------------------------------------
+// planning
+
+import house190x140_1 from '../assets/images/portfolio/planning/house190x140/house190x140_1.png'
+import house190x140_2 from '../assets/images/portfolio/planning/house190x140/house190x140_2.png'
+import house190x140_3 from '../assets/images/portfolio/planning/house190x140/house190x140_3.png'
+
+import house100x150_1 from '../assets/images/portfolio/planning/house100x150/house100x150_1.png'
+import house100x150_2 from '../assets/images/portfolio/planning/house100x150/house100x150_2.png'
+import house100x150_3 from '../assets/images/portfolio/planning/house100x150/house100x150_3.png'
+
+import terrace150x150_1 from '../assets/images/portfolio/planning/terrace150x150/terrace150x150_1.png'
+import terrace150x150_2 from '../assets/images/portfolio/planning/terrace150x150/terrace150x150_2.png'
+import terrace150x150_3 from '../assets/images/portfolio/planning/terrace150x150/terrace150x150_3.png'
+import terrace150x150_4 from '../assets/images/portfolio/planning/terrace150x150/terrace150x150_4.png'
+
+import banya140x130_1 from '../assets/images/portfolio/planning/banya140x130/banya140x130_1.png'
+import banya140x130_2 from '../assets/images/portfolio/planning/banya140x130/banya140x130_2.png'
+import banya140x130_3 from '../assets/images/portfolio/planning/banya140x130/banya140x130_3.png'
+import banya140x130_4 from '../assets/images/portfolio/planning/banya140x130/banya140x130_4.png'
+
+// planning
+// -------------------------------------------------------------------------------------------------------------------------
+
+// -------------------------------------------------------------------------------------------------------------------------
+// fitodesign
+
+import fitodesignEmpty1 from '../assets/images/portfolio/fitodesign/fitodesignEmpty1.png'
+import fitodesignEmpty2 from '../assets/images/portfolio/fitodesign/fitodesignEmpty2.png'
+import fitodesignEmpty3 from '../assets/images/portfolio/fitodesign/fitodesignEmpty3.png'
+import fitodesignEmpty4 from '../assets/images/portfolio/fitodesign/fitodesignEmpty4.png'
+import fitodesignEmpty5 from '../assets/images/portfolio/fitodesign/fitodesignEmpty5.png'
+import fitodesignEmpty6 from '../assets/images/portfolio/fitodesign/fitodesignEmpty6.png'
+
+// fitodesign
+// -------------------------------------------------------------------------------------------------------------------------
 
 export const progress = [
   {
@@ -160,28 +228,28 @@ export const servicesCard = [
 
 export const employees = [
   {
-    imageSrc: '8xsptj4/julia.png',
+    imageSrc: JuliaPhoto,
     phone: '+7 (923) 465-99-77',
     name: 'Юлия Кошкина',
     post: 'АРХИТЕКТОР, TEAM LEAD, FOUNDER',
     description: 'Окончила Сибирский Государственный\nУниверситет в г. Новокузнецк\nпо специальности "Архитектура"\n\nЗанимается деятельностью в областях\nархитектуры и дизайна более 10 лет\n\nНаправления деятельности:\n- Архитектурное проектирование\n- Дизайн интерьера\n- Проектирование общих конструктивных\nи архитектурных решений зданий и сооружений'
   },
   {
-    imageSrc: 'DDnv05g/andrey.png',
+    imageSrc: AndreyPhoto,
     phone: '+7 (951) 604-80-60',
     name: 'Андрей Витомский',
     post: 'АРХИТЕКТОР, ДИЗАЙНЕР, CEO',
     description: 'Окончил Новосибирский Государственный\nУниверситет архитектуры, дизайна и искусств\nим А.Д. Крячкова по специальности "Архитектура"\n\nНаправления деятельности:\n- Архитектурное проектирование\n- Дизайн интерьера\nЗанимается деятельностью в областях\nархитектуры и дизайна более 4-х лет'
   },
   {
-    imageSrc: 'tLfcz60/nikita.png',
+    imageSrc: NikitaPhoto,
     phone: '+7 (913) 295-92-49',
     name: 'Никита Жуков',
     post: 'ДИЗАЙНЕР, CEO',
     description: 'Окончил Новосибирский Государственный\nАрхитектурно-Строительный Университет\n(СИБСТРИН) по специальности "Архитектура"\n\nНаправления деятельности:\n- Дизайн интерьера\n- Фитодизайн\nЗанимается деятельностью в области\nдизайна интерьера более 4-х лет'
   },
   {
-    imageSrc: '8mgMYtR/roma.png',
+    imageSrc: RomaPhoto,
     name: 'Роман Агеев',
     post: 'ИНЖЕНЕР-КОНСТРУКТОР',
     description: 'Окончил Новосибирский Государственный\nАрхитектурно-Строительный Университет\n(СИБСТРИН) по специальности "Архитектура"\n\nНаправления деятельности:\n- Архитектурное проектирование\n- Металлоконструкции\nЗанимается деятельностью в областях\nархитектуры и металлоконструкций\nболее 4-х лет'
@@ -194,27 +262,27 @@ export const portfolioSquares = [
     squares: [
       {
         name: 'kebab-house',
-        mainImage: 'R3r9ZB0/kebab-House1.png',
-        images: ['R3r9ZB0/kebab-House1.png', '1zH49FW/kebab-House2.png', 'fqHy7mB/kebab-House3.png', 'zrcXKFh/kebab-House4.png', 'GsQV6BN/kebab-House5.png']
+        mainImage: kebabHouse1,
+        images: [kebabHouse1, kebabHouse2, kebabHouse3, kebabHouse4, kebabHouse5]
       },
       {
         name: 'sanatorium-prokopyevskiy',
-        mainImage: '7CfLPLV/sanatorium2.jpg',
-        images: ['1LDcWW5/sanatorium1.jpg', '7CfLPLV/sanatorium2.jpg', 'jWWcW81/sanatorium3.jpg', 'x8mZsCt/sanatorium4.jpg', '1JbRVKw/sanatorium5.jpg']
+        mainImage: sanatorium2,
+        images: [sanatorium1, sanatorium2, sanatorium3, sanatorium4, sanatorium5]
       },
       {
         name: 'green-quartal-flat',
-        mainImage: 'Gtfm86p/green-Quartal-Flat1.jpg',
-        images: ['Gtfm86p/green-Quartal-Flat1.jpg', 'FB4VLs2/green-Quartal-Flat2.jpg', 'HppZ5MC/green-Quartal-Flat3.jpg', 'HGmkY2f/green-Quartal-Flat4.jpg', 'YtY9znh/green-Quartal-Flat5.jpg']
+        mainImage: greenQuartalFlat1,
+        images: [greenQuartalFlat1, greenQuartalFlat2, greenQuartalFlat3, greenQuartalFlat4, greenQuartalFlat5]
       },
       {
-        mainImage: 'QjD14dG/design-Empty1.png',
+        mainImage: designEmpty1,
       },
       {
-        mainImage: 'L1dsKkq/design-Empty2.png',
+        mainImage: designEmpty2,
       },
       {
-        mainImage: 'XXkMjcH/design-Empty3.png',
+        mainImage: designEmpty3,
       },
     ],
   },
@@ -223,23 +291,23 @@ export const portfolioSquares = [
     squares: [
       {
         name: 'house-190x140',
-        mainImage: '89FCqq7/house190x140-1.png',
-        images: ['89FCqq7/house190x140-1.png', 'FxV3CBN/house190x140-2.png', 'dWp4Lgp/house190x140-3.png']
+        mainImage: house190x140_1,
+        images: [house190x140_1, house190x140_2, house190x140_3]
       },
       {
         name: 'house-100x150',
-        mainImage: 'hgS1F0T/house100x150-1.png',
-        images: ['hgS1F0T/house100x150-1.png', 'fph5Ynp/house100x150-2.png', 'WnLw67X/house100x150-3.png']
+        mainImage: house100x150_1,
+        images: [house100x150_1, house100x150_2, house100x150_3]
       },
       {
         name: 'terrace-150x150',
-        mainImage: 'xFfNY5w/terrace150x150-1.png',
-        images: ['xFfNY5w/terrace150x150-1.png', 'tcgkmvg/terrace150x150-2.png', 'vd6XGnz/terrace150x150-3.png', 'qYpnyzY/terrace150x150-4.png']
+        mainImage: terrace150x150_1,
+        images: [terrace150x150_1, terrace150x150_2, terrace150x150_3, terrace150x150_4]
       },
       {
         name: 'banya-140x130',
-        mainImage: 'jhyFMsp/banya140x130-1.png',
-        images: ['jhyFMsp/banya140x130-1.png', '0tQgvLj/banya140x130-2.png', 'mS09qQ2/banya140x130-3.png', 'VW026qC/banya140x130-4.png']
+        mainImage: banya140x130_1,
+        images: [banya140x130_1, banya140x130_2, banya140x130_3, banya140x130_4]
       },
     ],
   },
@@ -247,22 +315,22 @@ export const portfolioSquares = [
     id: 'fitodesign',
     squares: [
       {
-        mainImage: 'DPB5Cyw/fitodesign-Empty1.png',
+        mainImage: fitodesignEmpty1,
       },
       {
-        mainImage: 'VQwNvwj/fitodesign-Empty2.png',
+        mainImage: fitodesignEmpty2,
       },
       {
-        mainImage: 'bHKXQB3/fitodesign-Empty3.png',
+        mainImage: fitodesignEmpty3,
       },
       {
-        mainImage: 'h8wwmPD/fitodesign-Empty4.png',
+        mainImage: fitodesignEmpty4,
       },
       {
-        mainImage: 'CHmKZMy/fitodesign-Empty5.png',
+        mainImage: fitodesignEmpty5,
       },
       {
-        mainImage: 'rFx45mF/fitodesign-Empty6.png',
+        mainImage: fitodesignEmpty6,
       },
     ],
   },

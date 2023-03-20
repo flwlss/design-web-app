@@ -1,6 +1,6 @@
 import React from 'react'
 import { Carousel } from 'react-responsive-carousel';
-import { employees, PHOTO_URL } from '../common/constants';
+import { employees } from '../common/constants';
 
 const AboutCarousel = () => {
   return (
@@ -13,7 +13,7 @@ const AboutCarousel = () => {
         return (
           <div key={index}>
             <div className="about__slider__photo-wrapper">
-              <img className="about__slider__photo" src={PHOTO_URL + item.imageSrc} />
+              <img className="about__slider__photo" src={item.imageSrc} />
             </div>
             <p className="about__slider__name">{item.name}</p>
             <p className="about__slider__post">{item.post}</p>

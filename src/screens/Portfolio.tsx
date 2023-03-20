@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { PHOTO_URL, portfolioSquares } from "../common/constants";
+import { portfolioSquares } from "../common/constants";
 import Container from "../components/Container";
 import { PATHS } from "../navigation/paths";
 
@@ -27,7 +27,7 @@ const Portfolio = () => {
                         key={index}>
                         <img
                           className="portfolio-screen__square__img"
-                          src={PHOTO_URL + item.mainImage} alt="" />
+                          src={item.mainImage} alt="" />
                       </div>
                     )
                   })}
