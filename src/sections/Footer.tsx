@@ -15,7 +15,7 @@ const Footer = () => {
           <div className='footer__rights'>
             <img className='footer__rights__logo' src={Logo} alt="" />
             <p className='footer__rights__text'>{`© ${format(new Date(), 'yyyy')} `}
-              {`ARCHITECTURE DESIGN STUDIO\nВсе права защищены`}</p>
+              {`ARCHITECTURE DESIGN\nВсе права защищены`}</p>
           </div>
           <div className='footer__socials'>
             {socials.map((item, index) => {
