@@ -6,6 +6,7 @@ import ContactsButton from "./ContactsButton";
 import * as Yup from 'yup';
 import IMask from 'imask';
 import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
 
 interface IFeedbackCardProps {
   closeAction: () => void
@@ -33,9 +34,10 @@ const FeedbackCard = (props: IFeedbackCardProps) => {
       if (values) {
         emailjs.sendForm('service_5vyztfl', 'template_0i0s8wb', '#feedbackForm', 'Sou9g0OIZpFtqc25d')
           .then((result) => {
-            console.log(result.text);
+            props.closeAction()
+            toast.success('Заявка успешно отправлена')
           }, (error) => {
-            console.log(error.text);
+            toast.error('Ошибка')
           });
       }
     },
