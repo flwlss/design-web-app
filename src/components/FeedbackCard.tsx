@@ -5,6 +5,7 @@ import RightBackground from '../assets/images/backgrounds/rightFormBackground.jp
 import ContactsButton from "./ContactsButton";
 import * as Yup from 'yup';
 import IMask from 'imask';
+import emailjs from '@emailjs/browser';
 
 interface IFeedbackCardProps {
   closeAction: () => void
@@ -29,12 +30,19 @@ const FeedbackCard = (props: IFeedbackCardProps) => {
       phone: Yup.string().min(16, 'Неверно введен номер')
     }),
     onSubmit: values => {
-      alert(JSON.stringify(values, null, 2));
+      if (values) {
+        emailjs.sendForm('service_5vyztfl', 'template_0i0s8wb', '#feedbackForm', 'Sou9g0OIZpFtqc25d')
+          .then((result) => {
+            console.log(result.text);
+          }, (error) => {
+            console.log(error.text);
+          });
+      }
     },
   });
 
   return (
-    <form onSubmit={formik.handleSubmit} className="feedbackCard">
+    <form id="feedbackForm" onSubmit={formik.handleSubmit} className="feedbackCard">
       <div
         onClick={props.closeAction}
         style={{ backgroundImage: `url(${LeftBackground})` }}
