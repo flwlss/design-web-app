@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Container from '../components/Container'
-import Background from '../assets/images/backgrounds/contactsBackground.png'
+import Background from '../assets/images/backgrounds/contactsBackground.jpg'
 import { companyContacts, employees } from '../common/constants'
 import ContactsButton from '../components/ContactsButton'
 import FeedbackCard from '../components/FeedbackCard'

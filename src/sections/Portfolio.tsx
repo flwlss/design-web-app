@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Background from '../assets/images/backgrounds/portfolioBackground.png'
+import Background from '../assets/images/backgrounds/portfolioBackground.jpg'
 import Container from "../components/Container";
 import PortfolioPage from "../components/PortfolioPage";
 

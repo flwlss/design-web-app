@@ -1,9 +1,9 @@
 import { format } from 'date-fns'
 
-import JuliaPhoto from '../assets/images/employees/julia.png'
-import AndreyPhoto from '../assets/images/employees/andrey.png'
-import NikitaPhoto from '../assets/images/employees/nikita.png'
-import RomaPhoto from '../assets/images/employees/roma.png'
+import JuliaPhoto from '../assets/images/employees/julia.jpg'
+import AndreyPhoto from '../assets/images/employees/andrey.jpg'
+import NikitaPhoto from '../assets/images/employees/nikita.jpg'
+import RomaPhoto from '../assets/images/employees/roma.jpg'
 
 // -------------------------------------------------------------------------------------------------------------------------
 // design

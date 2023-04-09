@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Background from '../assets/images/backgrounds/headerBackground.png'
+import Background from '../assets/images/backgrounds/headerBackground.jpg'
 import Container from "../components/Container";
 import FeedbackCard from "../components/FeedbackCard";
 import HeaderButton from "../components/HeaderButton";

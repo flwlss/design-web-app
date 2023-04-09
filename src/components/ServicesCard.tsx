@@ -1,6 +1,6 @@
 import React from 'react'
 import { servicesCard } from '../common/constants'
-import Background from '../assets/images/backgrounds/contactsBackground.png'
+import Background from '../assets/images/backgrounds/contactsBackground.jpg'
 import Arrow from '../assets/images/icons/blueLeftArrow.svg'
 
 interface IServicesCardProps {

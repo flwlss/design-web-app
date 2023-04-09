@@ -1,6 +1,6 @@
 import { format } from 'date-fns'
 import React from 'react'
-import Background from '../assets/images/backgrounds/footerBackground.png'
+import Background from '../assets/images/backgrounds/footerBackground.jpg'
 import Container from '../components/Container'
 import Logo from '../assets/images/logo.png'
 import { socials } from '../common/constants'

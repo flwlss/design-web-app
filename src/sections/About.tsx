@@ -1,5 +1,5 @@
 import React from 'react'
-import Background from '../assets/images/backgrounds/aboutBackground.png'
+import Background from '../assets/images/backgrounds/aboutBackground.jpg'
 import AboutCarousel from '../components/AboutCarousel'
 import Container from '../components/Container'
 
