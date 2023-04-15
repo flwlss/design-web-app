@@ -1,7 +1,8 @@
-const webpack = require('webpack')
-const path = require('path')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const webpack = require('webpack');
+const path = require('path');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const production = process.env.NODE_ENV === 'production'
 
@@ -55,7 +56,6 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'images',
             },
           },
           {
@@ -95,6 +95,11 @@ module.exports = {
       template: './public/index.html',
       filename: 'index.html',
       favicon: './public/favicon.ico',
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'public/images', to: 'images' },
+      ],
     }),
   ],
   devServer: {

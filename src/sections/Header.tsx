@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Background from '../assets/images/backgrounds/headerBackground.jpg'
 import Container from "../components/Container";
 import FeedbackCard from "../components/FeedbackCard";
 import HeaderButton from "../components/HeaderButton";
@@ -13,7 +12,7 @@ const Header = () => {
       {showCard && <FeedbackCard closeAction={() => { setShowCard(false) }} />}
       <header
         id="header"
-        style={{ backgroundImage: `url(${Background})` }}
+        style={{ backgroundImage: `url('/images/backgrounds/headerBackground.jpg')` }}
         className="header">
         <Container>
           <div className="header__content">

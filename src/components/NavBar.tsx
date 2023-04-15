@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Container from "./Container";
-import Logo from '../assets/images/logo.png'
 import { scroller } from "react-scroll";
 import { employees } from "../common/constants";
 
@@ -35,7 +34,7 @@ const NavBar = () => {
       <Container>
         <div className="navBar__wrapper">
           <div onClick={() => { setSectionId('header') }} className="navBar__company">
-            <img className="navBar__company__logo" src={Logo} alt="" />
+            <img className="navBar__company__logo" src='/images/logo.png' alt="" />
             <p className="navBar__company__name">{`architecture\ndesign`}</p>
           </div>
           <div className="navBar__items">

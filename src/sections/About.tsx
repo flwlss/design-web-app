@@ -1,5 +1,4 @@
 import React from 'react'
-import Background from '../assets/images/backgrounds/aboutBackground.jpg'
 import AboutCarousel from '../components/AboutCarousel'
 import Container from '../components/Container'
 
@@ -7,7 +6,7 @@ const About = () => {
   return (
     <section
       id='about'
-      style={{ backgroundImage: `url(${Background})` }}
+      style={{ backgroundImage: `url('/images/backgrounds/aboutBackground.jpg')` }}
       className="about">
       <Container>
         <div className='about__wrapper'>

@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-import BackgroundLeft from '../assets/images/backgrounds/contactsBackground.jpg'
-import BackgroundRight from '../assets/images/backgrounds/meetingBackground.jpg'
 import { meeting, services } from "../common/constants";
-import Arrow from '../assets/images/icons/blueRightArrow.svg'
 import ServicesCard from "../components/ServicesCard";
 
 const Services = () => {
@@ -21,7 +18,7 @@ const Services = () => {
       <section
         id="services"
         className="services-and-price">
-        <div style={{ backgroundImage: `url(${BackgroundLeft})` }} className="services">
+        <div style={{ backgroundImage: `url('/images/backgrounds/contactsBackground.jpg')` }} className="services">
           <p className="services__title">услуги и цены</p>
           <div className="services__services-wrapper">
             {services.map((item, index) => {
@@ -33,7 +30,7 @@ const Services = () => {
                     setCardId(item.id)
                     setShowCard(true)
                   }} className="services__arrow">
-                    <img src={Arrow} alt="" />
+                    <img src='/images/icons/blueRightArrow.svg' alt="" />
                   </div>
                   {item.cost.map((item, index) => {
                     return (
@@ -47,7 +44,7 @@ const Services = () => {
             })}
           </div>
         </div>
-        <div style={{ backgroundImage: `url(${BackgroundRight})` }} className="meeting">
+        <div style={{ backgroundImage: `url('/images/backgrounds/meetingBackground.jpg')` }} className="meeting">
           <p className="meeting__title">C чего начать с нами работу</p>
           <div className="meeting__opacity">
             {meeting.map((item, index) => {

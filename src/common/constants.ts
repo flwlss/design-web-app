@@ -1,10 +1,5 @@
 import { format } from 'date-fns'
 
-import JuliaPhoto from '../assets/images/employees/julia.jpg'
-import AndreyPhoto from '../assets/images/employees/andrey.jpg'
-import NikitaPhoto from '../assets/images/employees/nikita.jpg'
-import RomaPhoto from '../assets/images/employees/roma.jpg'
-
 // -------------------------------------------------------------------------------------------------------------------------
 // design
 
@@ -69,9 +64,6 @@ import fitodesignEmpty6 from '../assets/images/portfolio/fitodesign/fitodesignEm
 
 // fitodesign
 // -------------------------------------------------------------------------------------------------------------------------
-
-import Telegram from '../assets/images/icons/telegram.svg'
-import Whatsapp from '../assets/images/icons/whatsapp.svg'
 
 export const progress = [
   {
@@ -231,28 +223,28 @@ export const servicesCard = [
 
 export const employees = [
   {
-    imageSrc: JuliaPhoto,
+    imageSrc: '/images/employees/julia.jpg',
     phone: '+7 (923) 465-99-77',
     name: 'Юлия Кошкина',
     post: 'АРХИТЕКТОР, TEAM LEAD, FOUNDER',
     description: 'Окончила Сибирский Государственный\nУниверситет в г. Новокузнецк\nпо специальности "Архитектура"\n\nЗанимается деятельностью в областях\nархитектуры и дизайна более 10 лет\n\nНаправления деятельности:\n- Архитектурное проектирование\n- Дизайн интерьера\n- Проектирование общих конструктивных\nи архитектурных решений зданий и сооружений'
   },
   {
-    imageSrc: AndreyPhoto,
+    imageSrc: '/images/employees/andrey.jpg',
     phone: '+7 (951) 604-80-60',
     name: 'Андрей Витомский',
     post: 'АРХИТЕКТОР, ДИЗАЙНЕР, CEO',
     description: 'Окончил Новосибирский Государственный\nУниверситет архитектуры, дизайна и искусств\nим А.Д. Крячкова по специальности "Архитектура"\n\nНаправления деятельности:\n- Архитектурное проектирование\n- Дизайн интерьера\nЗанимается деятельностью в областях\nархитектуры и дизайна более 4-х лет'
   },
   {
-    imageSrc: NikitaPhoto,
+    imageSrc: '/images/employees/nikita.jpg',
     phone: '+7 (913) 295-92-49',
     name: 'Никита Жуков',
     post: 'ДИЗАЙНЕР, CEO',
     description: 'Окончил Новосибирский Государственный\nАрхитектурно-Строительный Университет\n(СИБСТРИН) по специальности "Архитектура"\n\nНаправления деятельности:\n- Дизайн интерьера\n- Фитодизайн\nЗанимается деятельностью в области\nдизайна интерьера более 4-х лет'
   },
   {
-    imageSrc: RomaPhoto,
+    imageSrc: '/images/employees/roma.jpg',
     name: 'Роман Агеев',
     post: 'ИНЖЕНЕР-КОНСТРУКТОР',
     description: 'Окончил Новосибирский Государственный\nАрхитектурно-Строительный Университет\n(СИБСТРИН) по специальности "Архитектура"\n\nНаправления деятельности:\n- Архитектурное проектирование\n- Металлоконструкции\nЗанимается деятельностью в областях\nархитектуры и металлоконструкций\nболее 4-х лет'
@@ -353,10 +345,10 @@ export const companyContacts = [
 export const socials = [
   {
     href: 'https://wa.me/+79234792799',
-    svgSrc: Whatsapp
+    svgSrc: '/images/icons/whatsapp.svg'
   },
   {
     href: 'https://t.me/fooyzi',
-    svgSrc: Telegram
+    svgSrc: '/images/icons/telegram.svg'
   }
 ]

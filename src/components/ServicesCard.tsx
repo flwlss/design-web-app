@@ -1,7 +1,5 @@
 import React from 'react'
 import { servicesCard } from '../common/constants'
-import Background from '../assets/images/backgrounds/contactsBackground.jpg'
-import Arrow from '../assets/images/icons/blueLeftArrow.svg'
 
 interface IServicesCardProps {
   cardId: number
@@ -11,7 +9,7 @@ interface IServicesCardProps {
 const ServicesCard = (props: IServicesCardProps) => {
   return (
     <div
-      style={{ backgroundImage: `url(${Background})` }}
+      style={{ backgroundImage: `url('/images/backgrounds/contactsBackground.jpg')` }}
       className='services-card'>
       {servicesCard.map((item, index) => {
         if (item.id === props.cardId) {
@@ -40,7 +38,7 @@ const ServicesCard = (props: IServicesCardProps) => {
         }
       })}
       <div onClick={props.closeCard} className="services-card__close-arrow">
-        <img src={Arrow} alt="" />
+        <img src='/images/icons/blueLeftArrow.svg' alt="" />
       </div>
     </div>
   )

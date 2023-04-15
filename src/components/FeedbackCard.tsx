@@ -1,7 +1,5 @@
 import { useFormik } from "formik";
 import React, { useEffect, useState } from "react";
-import LeftBackground from '../assets/images/backgrounds/leftFormBackground.jpg'
-import RightBackground from '../assets/images/backgrounds/rightFormBackground.jpg'
 import ContactsButton from "./ContactsButton";
 import * as Yup from 'yup';
 import IMask from 'imask';
@@ -54,10 +52,10 @@ const FeedbackCard = (props: IFeedbackCardProps) => {
       <form id="feedbackForm" onSubmit={formik.handleSubmit} className="feedbackCard">
         <div
           onClick={props.closeAction}
-          style={{ backgroundImage: `url(${LeftBackground})` }}
+          style={{ backgroundImage: `url('/images/backgrounds/leftFormBackground.jpg')` }}
           className="feedbackCard__closeCard" />
         <div
-          style={{ backgroundImage: `url(${LeftBackground})` }}
+          style={{ backgroundImage: `url('/images/backgrounds/leftFormBackground.jpg')` }}
           className="feedbackCard__left">
           <p className="feedbackCard__left__title">{`заказать\nобратный звонок`}</p>
           <ContactsButton
@@ -65,7 +63,7 @@ const FeedbackCard = (props: IFeedbackCardProps) => {
             title="Отправить" />
         </div>
         <div
-          style={{ backgroundImage: `url(${RightBackground})` }}
+          style={{ backgroundImage: `url('/images/backgrounds/rightFormBackground.jpg')` }}
           className="feedbackCard__right">
           <div className="feedbackCard__right__inputWrapper">
             <label

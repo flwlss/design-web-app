@@ -1,19 +1,17 @@
 import { format } from 'date-fns'
 import React from 'react'
-import Background from '../assets/images/backgrounds/footerBackground.jpg'
 import Container from '../components/Container'
-import Logo from '../assets/images/logo.png'
 import { socials } from '../common/constants'
 
 const Footer = () => {
   return (
     <footer
-      style={{ backgroundImage: `url(${Background})` }}
+      style={{ backgroundImage: `url('/images/backgrounds/footerBackground.jpg')` }}
       className="footer">
       <Container>
         <div className='footer__wrapper'>
           <div className='footer__rights'>
-            <img className='footer__rights__logo' src={Logo} alt="" />
+            <img className='footer__rights__logo' src='/images/logo.png' alt="" />
             <p className='footer__rights__text'>{`© ${format(new Date(), 'yyyy')} `}
               {`ARCHITECTURE DESIGN\nВсе права защищены`}</p>
           </div>

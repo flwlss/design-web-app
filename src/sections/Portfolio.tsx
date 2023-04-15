@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Background from '../assets/images/backgrounds/portfolioBackground.jpg'
 import Container from "../components/Container";
 import PortfolioPage from "../components/PortfolioPage";
 
@@ -28,7 +27,7 @@ const Portfolio = () => {
   return (
     <section
       id="portfolio"
-      style={{ backgroundImage: `url(${Background})` }}
+      style={{ backgroundImage: `url('/images/backgrounds/portfolioBackground.jpg')` }}
       className="portfolio">
       <Container>
         <div className="portfolio__pages">

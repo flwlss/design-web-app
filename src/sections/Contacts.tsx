@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Container from '../components/Container'
-import Background from '../assets/images/backgrounds/contactsBackground.jpg'
 import { companyContacts, employees } from '../common/constants'
 import ContactsButton from '../components/ContactsButton'
 import FeedbackCard from '../components/FeedbackCard'
@@ -14,7 +13,7 @@ const Contacts = () => {
       {showCard && <FeedbackCard closeAction={() => { setShowCard(false) }} />}
       <section
         id='contacts'
-        style={{ backgroundImage: `url(${Background})` }} className='contacts'>
+        style={{ backgroundImage: `url('/images/backgrounds/contactsBackground.jpg')` }} className='contacts'>
         <Container>
           <div>
             <p className='contacts__title'>контакты</p>
