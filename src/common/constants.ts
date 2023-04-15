@@ -1,70 +1,5 @@
 import { format } from 'date-fns'
 
-// -------------------------------------------------------------------------------------------------------------------------
-// design
-
-import kebabHouse1 from '../assets/images/portfolio/design/kebabHouse/kebabHouse1.png'
-import kebabHouse2 from '../assets/images/portfolio/design/kebabHouse/kebabHouse2.png'
-import kebabHouse3 from '../assets/images/portfolio/design/kebabHouse/kebabHouse3.png'
-import kebabHouse4 from '../assets/images/portfolio/design/kebabHouse/kebabHouse4.png'
-import kebabHouse5 from '../assets/images/portfolio/design/kebabHouse/kebabHouse5.png'
-
-import sanatorium1 from '../assets/images/portfolio/design/sanatorium/sanatorium1.jpg'
-import sanatorium2 from '../assets/images/portfolio/design/sanatorium/sanatorium2.jpg'
-import sanatorium3 from '../assets/images/portfolio/design/sanatorium/sanatorium3.jpg'
-import sanatorium4 from '../assets/images/portfolio/design/sanatorium/sanatorium4.jpg'
-import sanatorium5 from '../assets/images/portfolio/design/sanatorium/sanatorium5.jpg'
-
-import greenQuartalFlat1 from '../assets/images/portfolio/design/greenQuartalFlat/greenQuartalFlat1.jpg'
-import greenQuartalFlat2 from '../assets/images/portfolio/design/greenQuartalFlat/greenQuartalFlat2.jpg'
-import greenQuartalFlat3 from '../assets/images/portfolio/design/greenQuartalFlat/greenQuartalFlat3.jpg'
-import greenQuartalFlat4 from '../assets/images/portfolio/design/greenQuartalFlat/greenQuartalFlat4.jpg'
-import greenQuartalFlat5 from '../assets/images/portfolio/design/greenQuartalFlat/greenQuartalFlat5.jpg'
-
-import designEmpty1 from '../assets/images/portfolio/design/designEmpty1.png'
-import designEmpty2 from '../assets/images/portfolio/design/designEmpty2.png'
-import designEmpty3 from '../assets/images/portfolio/design/designEmpty3.png'
-
-// design
-// -------------------------------------------------------------------------------------------------------------------------
-
-// -------------------------------------------------------------------------------------------------------------------------
-// planning
-
-import house190x140_1 from '../assets/images/portfolio/planning/house190x140/house190x140_1.png'
-import house190x140_2 from '../assets/images/portfolio/planning/house190x140/house190x140_2.png'
-import house190x140_3 from '../assets/images/portfolio/planning/house190x140/house190x140_3.png'
-
-import house100x150_1 from '../assets/images/portfolio/planning/house100x150/house100x150_1.png'
-import house100x150_2 from '../assets/images/portfolio/planning/house100x150/house100x150_2.png'
-import house100x150_3 from '../assets/images/portfolio/planning/house100x150/house100x150_3.png'
-
-import terrace150x150_1 from '../assets/images/portfolio/planning/terrace150x150/terrace150x150_1.png'
-import terrace150x150_2 from '../assets/images/portfolio/planning/terrace150x150/terrace150x150_2.png'
-import terrace150x150_3 from '../assets/images/portfolio/planning/terrace150x150/terrace150x150_3.png'
-import terrace150x150_4 from '../assets/images/portfolio/planning/terrace150x150/terrace150x150_4.png'
-
-import banya140x130_1 from '../assets/images/portfolio/planning/banya140x130/banya140x130_1.png'
-import banya140x130_2 from '../assets/images/portfolio/planning/banya140x130/banya140x130_2.png'
-import banya140x130_3 from '../assets/images/portfolio/planning/banya140x130/banya140x130_3.png'
-import banya140x130_4 from '../assets/images/portfolio/planning/banya140x130/banya140x130_4.png'
-
-// planning
-// -------------------------------------------------------------------------------------------------------------------------
-
-// -------------------------------------------------------------------------------------------------------------------------
-// fitodesign
-
-import fitodesignEmpty1 from '../assets/images/portfolio/fitodesign/fitodesignEmpty1.png'
-import fitodesignEmpty2 from '../assets/images/portfolio/fitodesign/fitodesignEmpty2.png'
-import fitodesignEmpty3 from '../assets/images/portfolio/fitodesign/fitodesignEmpty3.png'
-import fitodesignEmpty4 from '../assets/images/portfolio/fitodesign/fitodesignEmpty4.png'
-import fitodesignEmpty5 from '../assets/images/portfolio/fitodesign/fitodesignEmpty5.png'
-import fitodesignEmpty6 from '../assets/images/portfolio/fitodesign/fitodesignEmpty6.png'
-
-// fitodesign
-// -------------------------------------------------------------------------------------------------------------------------
-
 export const progress = [
   {
     title: '2+',
@@ -257,27 +192,27 @@ export const portfolioSquares = [
     squares: [
       {
         name: 'kebab-house',
-        mainImage: kebabHouse1,
-        images: [kebabHouse1, kebabHouse2, kebabHouse3, kebabHouse4, kebabHouse5]
+        mainImage: '/images/portfolio/design/kebabHouse/kebabHouse1.png',
+        images: ['/images/portfolio/design/kebabHouse/kebabHouse1.png', '/images/portfolio/design/kebabHouse/kebabHouse2.png', '/images/portfolio/design/kebabHouse/kebabHouse3.png', '/images/portfolio/design/kebabHouse/kebabHouse4.png', '/images/portfolio/design/kebabHouse/kebabHouse5.png']
       },
       {
         name: 'sanatorium-prokopyevskiy',
-        mainImage: sanatorium2,
-        images: [sanatorium1, sanatorium2, sanatorium3, sanatorium4, sanatorium5]
+        mainImage: '/images/portfolio/design/sanatorium/sanatorium2.jpg',
+        images: ['/images/portfolio/design/sanatorium/sanatorium1.jpg', '/images/portfolio/design/sanatorium/sanatorium2.jpg', '/images/portfolio/design/sanatorium/sanatorium3.jpg', '/images/portfolio/design/sanatorium/sanatorium4.jpg', '/images/portfolio/design/sanatorium/sanatorium5.jpg']
       },
       {
         name: 'green-quartal-flat',
-        mainImage: greenQuartalFlat1,
-        images: [greenQuartalFlat1, greenQuartalFlat2, greenQuartalFlat3, greenQuartalFlat4, greenQuartalFlat5]
+        mainImage: '/images/portfolio/design/greenQuartalFlat/greenQuartalFlat1.jpg',
+        images: ['/images/portfolio/design/greenQuartalFlat/greenQuartalFlat1.jpg', '/images/portfolio/design/greenQuartalFlat/greenQuartalFlat2.jpg', '/images/portfolio/design/greenQuartalFlat/greenQuartalFlat3.jpg', '/images/portfolio/design/greenQuartalFlat/greenQuartalFlat4.jpg', '/images/portfolio/design/greenQuartalFlat/greenQuartalFlat5.jpg']
       },
       {
-        mainImage: designEmpty1,
+        mainImage: '/images/portfolio/design/designEmpty1.png',
       },
       {
-        mainImage: designEmpty2,
+        mainImage: '/images/portfolio/design/designEmpty2.png',
       },
       {
-        mainImage: designEmpty3,
+        mainImage: '/images/portfolio/design/designEmpty3.png',
       },
     ],
   },
@@ -286,23 +221,23 @@ export const portfolioSquares = [
     squares: [
       {
         name: 'house-190x140',
-        mainImage: house190x140_1,
-        images: [house190x140_1, house190x140_2, house190x140_3]
+        mainImage: '/images/portfolio/planning/house190x140/house190x140_1.png',
+        images: ['/images/portfolio/planning/house190x140/house190x140_1.png', '/images/portfolio/planning/house190x140/house190x140_2.png', '/images/portfolio/planning/house190x140/house190x140_3.png']
       },
       {
         name: 'house-100x150',
-        mainImage: house100x150_1,
-        images: [house100x150_1, house100x150_2, house100x150_3]
+        mainImage: '/images/portfolio/planning/house100x150/house100x150_1.png',
+        images: ['/images/portfolio/planning/house100x150/house100x150_1.png', '/images/portfolio/planning/house100x150/house100x150_2.png', '/images/portfolio/planning/house100x150/house100x150_3.png']
       },
       {
         name: 'terrace-150x150',
-        mainImage: terrace150x150_1,
-        images: [terrace150x150_1, terrace150x150_2, terrace150x150_3, terrace150x150_4]
+        mainImage: '/images/portfolio/planning/terrace150x150/terrace150x150_1.png',
+        images: ['/images/portfolio/planning/terrace150x150/terrace150x150_1.png', '/images/portfolio/planning/terrace150x150/terrace150x150_2.png', '/images/portfolio/planning/terrace150x150/terrace150x150_3.png', '/images/portfolio/planning/terrace150x150/terrace150x150_4.png']
       },
       {
         name: 'banya-140x130',
-        mainImage: banya140x130_1,
-        images: [banya140x130_1, banya140x130_2, banya140x130_3, banya140x130_4]
+        mainImage: '/images/portfolio/planning/banya140x130/banya140x130_1.png',
+        images: ['/images/portfolio/planning/banya140x130/banya140x130_1.png', '/images/portfolio/planning/banya140x130/banya140x130_2.png', '/images/portfolio/planning/banya140x130/banya140x130_3.png', '/images/portfolio/planning/banya140x130/banya140x130_4.png']
       },
     ],
   },
@@ -310,22 +245,22 @@ export const portfolioSquares = [
     id: 'fitodesign',
     squares: [
       {
-        mainImage: fitodesignEmpty1,
+        mainImage: '/images/portfolio/fitodesign/fitodesignEmpty1.png',
       },
       {
-        mainImage: fitodesignEmpty2,
+        mainImage: '/images/portfolio/fitodesign/fitodesignEmpty2.png',
       },
       {
-        mainImage: fitodesignEmpty3,
+        mainImage: '/images/portfolio/fitodesign/fitodesignEmpty3.png',
       },
       {
-        mainImage: fitodesignEmpty4,
+        mainImage: '/images/portfolio/fitodesign/fitodesignEmpty4.png',
       },
       {
-        mainImage: fitodesignEmpty5,
+        mainImage: '/images/portfolio/fitodesign/fitodesignEmpty5.png',
       },
       {
-        mainImage: fitodesignEmpty6,
+        mainImage: '/images/portfolio/fitodesign/fitodesignEmpty6.png',
       },
     ],
   },
