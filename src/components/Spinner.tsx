@@ -12,7 +12,7 @@ const Spinner = () => {
         visible={true}
       />
     </div>
-  )
-}
+  );
+};
 
-export default Spinner
+export default Spinner;

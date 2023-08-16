@@ -1,17 +1,17 @@
-const webpack = require('webpack');
-const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+const webpack = require("webpack");
+const path = require("path");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
-const production = process.env.NODE_ENV === 'production'
+const production = process.env.NODE_ENV === "production";
 
 module.exports = {
-  entry: './src/index.tsx',
+  entry: "./src/index.tsx",
   output: {
     path: path.resolve(__dirname, "./dist"),
-    filename: 'bundle.js',
-    publicPath: '/',
+    filename: "bundle.js",
+    publicPath: "/",
   },
   module: {
     rules: [
@@ -19,18 +19,18 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
         },
       },
       {
         test: /\.(ts|tsx)?$/,
         use: {
-          loader: 'ts-loader',
+          loader: "ts-loader",
           options: {
             compilerOptions: {
               noEmit: false, // this option will solve the issue
             },
-          }
+          },
         },
         exclude: /node_modules/,
       },
@@ -39,13 +39,13 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           {
-            loader: 'style-loader',
+            loader: "style-loader",
           },
           {
-            loader: 'css-loader',
+            loader: "css-loader",
           },
           {
-            loader: 'sass-loader',
+            loader: "sass-loader",
           },
         ],
       },
@@ -53,13 +53,13 @@ module.exports = {
         test: /\.(png|jpe?g|gif|jp2|webp|css|svg)$/,
         use: [
           {
-            loader: 'file-loader',
+            loader: "file-loader",
             options: {
-              name: '[name].[ext]',
+              name: "[name].[ext]",
             },
           },
           {
-            loader: 'image-webpack-loader',
+            loader: "image-webpack-loader",
             options: {
               mozjpeg: {
                 progressive: true,
@@ -69,37 +69,35 @@ module.exports = {
                 enabled: false,
               },
               pngquant: {
-                quality: [0.65, 0.90],
-                speed: 4
+                quality: [0.65, 0.9],
+                speed: 4,
               },
               gifsicle: {
                 interlaced: false,
               },
               // the webp option will enable WEBP
               webp: {
-                quality: 75
-              }
-            }
+                quality: 75,
+              },
+            },
           },
         ],
         exclude: /node_modules/,
       },
-    ]
+    ],
   },
   resolve: {
-    extensions: ['.ts', '.js', '.json', '.tsx'],
+    extensions: [".ts", ".js", ".json", ".tsx"],
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: './public/index.html',
-      filename: 'index.html',
-      favicon: './public/favicon.ico',
+      template: "./public/index.html",
+      filename: "index.html",
+      favicon: "./public/favicon.ico",
     }),
     new CopyWebpackPlugin({
-      patterns: [
-        { from: 'public/images', to: 'images' },
-      ],
+      patterns: [{ from: "public/images", to: "images" }],
     }),
   ],
   devServer: {
@@ -107,5 +105,5 @@ module.exports = {
     open: true,
     historyApiFallback: true,
   },
-  mode: production === 'production' ? 'production' : 'development'
-}
+  mode: production === "production" ? "production" : "development",
+};

@@ -29,7 +29,7 @@
 
   &__title {
     font-size: 38px;
-    color: #1F2833;
+    color: #1f2833;
     text-transform: uppercase;
     margin-bottom: 25px;
 
@@ -44,14 +44,14 @@
   }
 
   &__services-wrapper {
-    border-right: 2px solid #1F2833;
-    border-left: 2px solid #1F2833;
+    border-right: 2px solid #1f2833;
+    border-left: 2px solid #1f2833;
     padding: 0 20px;
   }
 
   &__element {
     margin-bottom: 15px;
-    border-bottom: 2px solid #1F2833;
+    border-bottom: 2px solid #1f2833;
 
     &:last-child {
       margin-bottom: 0;
@@ -60,7 +60,7 @@
 
   &__subtitle {
     text-transform: uppercase;
-    color: #1F2833;
+    color: #1f2833;
     font-size: 27px;
 
     @media (max-width: 1366px) {
@@ -73,7 +73,7 @@
   }
 
   &__text {
-    color: #1F2833;
+    color: #1f2833;
     font-size: 18px;
     margin: 15px 0;
     text-align: justify;
@@ -122,7 +122,6 @@
   flex-direction: column;
   padding-top: 25px;
 
-
   @media (max-width: 1024px) {
     width: 100%;
     padding-top: 20px;
@@ -163,7 +162,6 @@
   }
 
   &__element {
-
     @media (max-width: 1024px) {
       border-bottom: 1px solid grey;
       padding-bottom: 12px;

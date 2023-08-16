@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import PortfolioButton from "./PortfolioButton";
 
 interface IPortfolioPageProps {
-  title: string
-  text: string
-  leftImageSrc: string
-  rightImageSrc: string
-  route: string
+  title: string;
+  text: string;
+  leftImageSrc: string;
+  rightImageSrc: string;
+  route: string;
 }
 
 const PortfolioPage = (props: IPortfolioPageProps) => {
@@ -24,14 +24,22 @@ const PortfolioPage = (props: IPortfolioPageProps) => {
       </div>
       <div className="portfolio-page__left">
         <div>
-          <img className="portfolio-page__left__img" src={props.leftImageSrc} alt="" />
+          <img
+            className="portfolio-page__left__img"
+            src={props.leftImageSrc}
+            alt=""
+          />
         </div>
       </div>
       <div className="portfolio-page__right">
-        <img className="portfolio-page__right__img" src={props.rightImageSrc} alt="" />
+        <img
+          className="portfolio-page__right__img"
+          src={props.rightImageSrc}
+          alt=""
+        />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default PortfolioPage
+export default PortfolioPage;

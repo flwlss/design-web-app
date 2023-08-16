@@ -8,7 +8,7 @@ const App: React.FC = () => {
       <Router />
       <ToastContainer />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

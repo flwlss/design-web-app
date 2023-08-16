@@ -37,19 +37,19 @@
     cursor: pointer;
 
     &::before {
-      content: '';
+      content: "";
       width: 2px;
       height: 25px;
-      background-color: #1F2833;
+      background-color: #1f2833;
       position: absolute;
       transform: rotate(45deg);
     }
 
     &::after {
-      content: '';
+      content: "";
       width: 2px;
       height: 25px;
-      background-color: #1F2833;
+      background-color: #1f2833;
       position: absolute;
       transform: rotate(-45deg);
     }
@@ -80,9 +80,9 @@
     &__title {
       text-transform: uppercase;
       font-size: 40px;
-      color: #1F2833;
+      color: #1f2833;
       text-align: center;
-      border-bottom: 1px solid #1F2833;
+      border-bottom: 1px solid #1f2833;
       white-space: pre-wrap;
       margin-bottom: 20px;
 

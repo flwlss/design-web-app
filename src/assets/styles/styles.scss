@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import './navBar.scss';
-@import './header.scss';
-@import './about.scss';
-@import './footer.scss';
-@import './progress.scss';
-@import './contacts.scss';
-@import './services.scss';
-@import './portfolio.scss';
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import "./navBar.scss";
+@import "./header.scss";
+@import "./about.scss";
+@import "./footer.scss";
+@import "./progress.scss";
+@import "./contacts.scss";
+@import "./services.scss";
+@import "./portfolio.scss";
 @import "react-responsive-carousel/lib/styles/carousel.min.css";
-@import './feedbackCard.scss';
-@import 'react-toastify/dist/ReactToastify.css';
+@import "./feedbackCard.scss";
+@import "react-toastify/dist/ReactToastify.css";
 
 /* Указываем box sizing */
 *,
@@ -51,7 +51,7 @@ li {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   min-width: 320px;
 }
@@ -60,7 +60,7 @@ body {
   padding: 0 15%;
   height: 100%;
 
-  @media (max-width:769px) {
+  @media (max-width: 769px) {
     padding: 0 5%;
   }
 }

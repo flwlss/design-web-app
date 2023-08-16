@@ -1,20 +1,17 @@
 import React, { useState } from "react";
 
 interface IHeaderButtonProps {
-  action: () => void
+  action: () => void;
 }
 
 const HeaderButton = (props: IHeaderButtonProps) => {
-
   return (
     <>
-      <button
-        onClick={props.action}
-        className="header__button">
+      <button onClick={props.action} className="header__button">
         Заказать проект
       </button>
     </>
-  )
-}
+  );
+};
 
-export default HeaderButton
+export default HeaderButton;

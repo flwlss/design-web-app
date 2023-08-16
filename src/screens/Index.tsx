@@ -9,7 +9,6 @@ import Services from "../sections/Services";
 import Portfolio from "../sections/Portfolio";
 
 const Index = () => {
-
   return (
     <>
       <NavBar />
@@ -21,7 +20,7 @@ const Index = () => {
       <Contacts />
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Index
+export default Index;

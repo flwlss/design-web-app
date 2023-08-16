@@ -1,6 +1,6 @@
-import React from 'react'
-import { Carousel } from 'react-responsive-carousel';
-import { employees } from '../common/constants';
+import React from "react";
+import { Carousel } from "react-responsive-carousel";
+import { employees } from "../common/constants";
 
 const AboutCarousel = () => {
   return (
@@ -8,7 +8,8 @@ const AboutCarousel = () => {
       showThumbs={false}
       showStatus={false}
       showIndicators={false}
-      infiniteLoop>
+      infiniteLoop
+    >
       {employees.map((item, index) => {
         return (
           <div key={index}>
@@ -19,10 +20,10 @@ const AboutCarousel = () => {
             <p className="about__slider__post">{item.post}</p>
             <p className="about__slider__description">{item.description}</p>
           </div>
-        )
+        );
       })}
     </Carousel>
-  )
-}
+  );
+};
 
-export default AboutCarousel
+export default AboutCarousel;

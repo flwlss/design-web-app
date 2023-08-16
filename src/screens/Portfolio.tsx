@@ -5,11 +5,10 @@ import Container from "../components/Container";
 import { PATHS } from "../navigation/paths";
 
 const Portfolio = () => {
-
-  const navigation = useNavigate()
+  const navigation = useNavigate();
 
   const { id } = useParams();
-  console.log('id', id);
+  console.log("id", id);
 
   return (
     <div className="portfolio-screen">
@@ -18,27 +17,33 @@ const Portfolio = () => {
           {portfolioSquares.map((item, index) => {
             if (item.id === id) {
               return (
-                <div className="portfolio-screen__squares" key={index} >
+                <div className="portfolio-screen__squares" key={index}>
                   {item.squares.map((item, index) => {
                     return (
                       <div
-                        onClick={() => { item.name && navigation(PATHS.PORTFOLIO + id + '/' + item.name) }}
+                        onClick={() => {
+                          item.name &&
+                            navigation(PATHS.PORTFOLIO + id + "/" + item.name);
+                        }}
                         className="portfolio-screen__square"
-                        key={index}>
+                        key={index}
+                      >
                         <img
                           className="portfolio-screen__square__img"
-                          src={item.mainImage} alt="" />
+                          src={item.mainImage}
+                          alt=""
+                        />
                       </div>
-                    )
+                    );
                   })}
                 </div>
-              )
+              );
             }
           })}
         </div>
       </Container>
     </div>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;

@@ -1,24 +1,24 @@
-import React from 'react'
-import { progress } from '../common/constants'
-import Container from '../components/Container'
+import React from "react";
+import { progress } from "../common/constants";
+import Container from "../components/Container";
 
 const Progress = () => {
   return (
-    <section className='progress'>
+    <section className="progress">
       <Container>
-        <div className='progress__wrapper'>
+        <div className="progress__wrapper">
           {progress.map((item, index) => {
             return (
-              <div key={index} className='progress__item'>
-                <p className='progress__item__title'>{item.title}</p>
-                <p className='progress__item__text'>{item.text}</p>
+              <div key={index} className="progress__item">
+                <p className="progress__item__title">{item.title}</p>
+                <p className="progress__item__text">{item.text}</p>
               </div>
-            )
+            );
           })}
         </div>
       </Container>
     </section>
-  )
-}
+  );
+};
 
-export default Progress
+export default Progress;

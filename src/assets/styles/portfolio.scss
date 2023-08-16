@@ -9,11 +9,11 @@
     align-items: center;
     padding: 40px 0;
 
-    @media (max-width:1366px) {
+    @media (max-width: 1366px) {
       padding: 30px 0;
     }
 
-    @media (max-width:1024px) {
+    @media (max-width: 1024px) {
       display: none;
     }
 
@@ -26,7 +26,7 @@
       white-space: pre-wrap;
       text-align: center;
 
-      @media (max-width:1366px) {
+      @media (max-width: 1366px) {
         font-size: 22px;
       }
     }
@@ -42,7 +42,7 @@
 .portfolio-page {
   display: flex;
 
-  @media (max-width:1024px) {
+  @media (max-width: 1024px) {
     display: block;
   }
 
@@ -53,7 +53,7 @@
     flex-direction: column;
     justify-content: flex-end;
 
-    @media (max-width:1024px) {
+    @media (max-width: 1024px) {
       width: 100%;
       padding: 0;
     }
@@ -68,7 +68,7 @@
   &__right {
     width: 50%;
 
-    @media (max-width:1024px) {
+    @media (max-width: 1024px) {
       display: none;
     }
 
@@ -80,23 +80,23 @@
   }
 
   &__opacity {
-    background-color: rgba(31, 40, 51, .45);
+    background-color: rgba(31, 40, 51, 0.45);
     position: absolute;
     margin-left: 15%;
     padding: 15px 0 15px 20px;
     width: 85%;
 
-    @media (max-width:1366px) {
+    @media (max-width: 1366px) {
       padding: 15px 15% 15px 20px;
     }
 
-    @media (max-width:1024px) {
+    @media (max-width: 1024px) {
       position: relative;
       padding: 15px 15% 15px 0;
       background-color: transparent;
     }
 
-    @media (max-width:768px) {
+    @media (max-width: 768px) {
       width: 100%;
       padding: 20px 5%;
       margin: 0;
@@ -106,7 +106,7 @@
       display: flex;
       align-items: center;
 
-      @media (max-width:1024px) {
+      @media (max-width: 1024px) {
         display: none;
       }
 
@@ -115,7 +115,7 @@
         height: 2px;
         background: #5ab9ea;
 
-        @media (max-width:1366px) {
+        @media (max-width: 1366px) {
           width: 60px;
         }
       }
@@ -126,7 +126,7 @@
         text-transform: uppercase;
         margin: 0 15px;
 
-        @media (max-width:1366px) {
+        @media (max-width: 1366px) {
           font-size: 16px;
         }
       }
@@ -139,11 +139,11 @@
       font-weight: 200;
       font-style: italic;
 
-      @media (max-width:1366px) {
+      @media (max-width: 1366px) {
         font-size: 28px;
       }
 
-      @media (max-width:768px) {
+      @media (max-width: 768px) {
         font-size: 25px;
         margin: 5px 0;
       }
@@ -156,16 +156,16 @@
       width: 60%;
       text-align: justify;
 
-      @media (max-width:1366px) {
+      @media (max-width: 1366px) {
         font-size: 21px;
         width: 100%;
       }
 
-      @media (max-width:1024px) {
+      @media (max-width: 1024px) {
         font-size: 18px;
       }
 
-      @media (max-width:768px) {
+      @media (max-width: 768px) {
         font-size: 17px;
       }
     }
@@ -173,12 +173,12 @@
 }
 
 .portfolio-btn {
-  border: 2px solid #5AB9EA;
+  border: 2px solid #5ab9ea;
   width: 100px;
   padding: 5px;
   margin-top: 10px;
   background: transparent;
-  color: #5AB9EA;
+  color: #5ab9ea;
   cursor: pointer;
 }
 
